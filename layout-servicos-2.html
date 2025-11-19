@@ -1,0 +1,257 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Serviços Essenza · Layout 02</title>
+<style>
+:root {
+    --bg: #fcf7f1;
+    --accent: #be8456;
+    --accent-dark: #9c6b45;
+    --ink: #1d1c1a;
+    --muted: #6a645c;
+    --card: #ffffff;
+    font-family: "Manrope", "Inter", system-ui, sans-serif;
+}
+*,
+*::before,
+*::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: var(--bg); color: var(--ink); line-height: 1.6; }
+img { max-width: 100%; display: block; }
+main { max-width: 1100px; margin: 0 auto; padding: clamp(1.5rem, 5vw, 4rem); display: grid; gap: 3.5rem; }
+.hero {
+    position: relative;
+    background: linear-gradient(180deg, rgba(29,28,26,.85), rgba(29,28,26,.65)), url("assets/images/9_20251026_131038_0002.png") center/cover no-repeat;
+    border-radius: 36px;
+    padding: clamp(2rem, 7vw, 5rem) clamp(1.5rem, 5vw, 4rem) clamp(4rem, 8vw, 6rem);
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+}
+.hero__figure {
+    width: 160px;
+    margin: 0 auto 1.5rem;
+}
+.hero__title { font-size: clamp(2.3rem, 5vw, 3.7rem); margin-bottom: 1rem; }
+.hero__subtitle { max-width: 640px; margin: 0 auto; }
+.hero__cta {
+    margin-top: 1.75rem;
+    display: inline-flex;
+    padding: .85rem 1.4rem;
+    border-radius: 18px;
+    background: var(--accent);
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: .05em;
+}
+.intro {
+    display: grid;
+    grid-template-columns: minmax(200px, 260px) minmax(0, 1fr);
+    gap: 1.5rem;
+}
+.intro__label {
+    text-transform: uppercase;
+    letter-spacing: .4em;
+    color: var(--muted);
+    font-size: .8rem;
+}
+.intro__content h2 { font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 1rem; }
+.intro__content p { color: var(--muted); }
+.services {
+    background: var(--card);
+    border-radius: 32px;
+    padding: clamp(1.5rem, 4vw, 3.5rem);
+    box-shadow: 0 25px 60px rgba(32,28,20,.08);
+}
+.services__title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.services__list {
+    counter-reset: svc;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+.services__item {
+    counter-increment: svc;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.25rem;
+    padding: 1.25rem;
+    border-radius: 24px;
+    background: #fefafa;
+    border: 1px solid rgba(190,132,86,.2);
+}
+.services__item:nth-child(odd) { background: #fff; }
+.services__item::before {
+    content: counter(svc, decimal-leading-zero);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--accent);
+}
+.service-info h3 { font-size: 1.1rem; margin-bottom: .4rem; }
+.service-image img { border-radius: 18px; height: 200px; object-fit: cover; width: 100%; }
+.cta {
+    border-radius: 36px;
+    padding: clamp(2rem, 4vw, 3.5rem);
+    background: radial-gradient(circle at top left, rgba(190,132,86,.2), transparent 60%), #1d1c1a;
+    color: #fff;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 2rem;
+}
+.cta h3 { font-size: clamp(2rem, 3vw, 2.8rem); margin-bottom: 1rem; }
+.cta__text p { margin-bottom: .8rem; }
+.cta__button {
+    margin-top: 1rem;
+    display: inline-flex;
+    padding: .9rem 1.8rem;
+    border: 1px solid var(--accent);
+    border-radius: 999px;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: .15em;
+    font-size: .85rem;
+}
+.cta__media {
+    justify-self: center;
+    max-width: 360px;
+}
+@media (max-width: 768px) {
+    .intro { grid-template-columns: 1fr; }
+    .services__item { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+<main>
+    <header class="hero">
+        <figure class="hero__figure">
+            <img src="assets/images/Confira-meu-design-do-Canva.png" alt="Essenza">
+        </figure>
+        <h1 class="hero__title">Você Sonha e a Essenza Realiza!</h1>
+        <p class="hero__subtitle">Cada ambiente feito para Guardar seus Melhores Momentos. Você recebe seu apartamento pronto para morar, do seu jeito e sem preocupações.</p>
+        <a class="hero__cta" href="https://wa.me/5524992055100" target="_blank" rel="noopener">Quero agendar uma consultoria</a>
+    </header>
+
+    <section class="intro" id="servicos-intro">
+        <div class="intro__label">Serviços Personalizados</div>
+        <div class="intro__content">
+            <h2>Serviços Personalizados</h2>
+            <p>Na Essenza você conta com uma equipe de arquitetos prontos para te auxiliar na personalização do seu imóvel. Cada projeto é pensado minunciosamente para atender todas as suas necessidades. Durante a Consultoria você conhece todos os nossos serviços e soluções para o seu imóvel.</p>
+        </div>
+    </section>
+
+    <section class="services" id="servicos-lista">
+        <h3 class="services__title">Portfólio de Soluções</h3>
+        <ol class="services__list">
+            <li class="services__item">
+                <div class="service-info">
+                    <h3>Troca de Revestimentos e Instalação de Box em Blindex</h3>
+                </div>
+                <div class="service-image">
+                    <img src="assets/images/Servicos/01 - 5_20251112_122429_0004.png" alt="Troca de revestimentos e instalação de box em blindex">
+                </div>
+            </li>
+            <li class="services__item">
+                <div class="service-info">
+                    <h3>Instalação de Ar-condicionado e Instalação de Iluminação Decorativa</h3>
+                </div>
+                <div class="service-image">
+                    <img src="assets/images/Servicos/02 - 14_20251112_161842_0013.png" alt="Instalação de ar-condicionado e iluminação decorativa">
+                </div>
+            </li>
+            <li class="services__item">
+                <div class="service-info">
+                    <h3>Instalação de novos pontos Hidráulicos</h3>
+                </div>
+                <div class="service-image">
+                    <img src="assets/images/Servicos/03 - 15_20251112_161842_0014-1.png" alt="Instalação de novos pontos hidráulicos">
+                </div>
+            </li>
+            <li class="services__item">
+                <div class="service-info">
+                    <h3>Marcenaria sob Medida</h3>
+                </div>
+                <div class="service-image">
+                    <img src="assets/images/Servicos/04 - 9_20251112_161842_0008.png" alt="Marcenaria sob medida">
+                </div>
+            </li>
+            <li class="services__item">
+                <div class="service-info">
+                    <h3>Troca de Bancadas em Marmoraria</h3>
+                </div>
+                <div class="service-image">
+                    <img src="assets/images/Servicos/05 - 12_20251112_161842_0011.png" alt="Troca de bancadas em marmoraria">
+                </div>
+            </li>
+            <li class="services__item">
+                <div class="service-info">
+                    <h3>Troca de louças e Metais</h3>
+                </div>
+                <div class="service-image">
+                    <img src="assets/images/Servicos/06 - 3_20251112_161841_0002.png" alt="Troca de louças e metais">
+                </div>
+            </li>
+            <li class="services__item">
+                <div class="service-info">
+                    <h3>Instalação de Cortina de Blindex</h3>
+                </div>
+                <div class="service-image">
+                    <img src="assets/images/Servicos/07 - 20251112_191206_0000.png" alt="Instalação de cortina de blindex">
+                </div>
+            </li>
+            <li class="services__item">
+                <div class="service-info">
+                    <h3>Integração de Ambientes</h3>
+                </div>
+                <div class="service-image">
+                    <img src="assets/images/Servicos/08 - 20251112_190904_0014.png" alt="Integração de ambientes">
+                </div>
+            </li>
+            <li class="services__item">
+                <div class="service-info">
+                    <h3>Instalação de Papel de Parede</h3>
+                </div>
+                <div class="service-image">
+                    <img src="assets/images/Servicos/09 - 20251112_191207_0011.png" alt="Instalação de papel de parede">
+                </div>
+            </li>
+            <li class="services__item">
+                <div class="service-info">
+                    <h3>Pintura Personalizada</h3>
+                </div>
+                <div class="service-image">
+                    <img src="assets/images/Servicos/10 - 20251112_191207_0002.png" alt="Pintura personalizada">
+                </div>
+            </li>
+            <li class="services__item">
+                <div class="service-info">
+                    <h3>Rebaixo de Gesso e Instalação de Rodapé de Poliestireno</h3>
+                </div>
+                <div class="service-image">
+                    <img src="assets/images/Servicos/11 - 20251112_190904_0016.png" alt="Rebaixo de gesso e instalação de rodapé de poliestireno">
+                </div>
+            </li>
+        </ol>
+    </section>
+
+    <section class="cta" id="consultoria">
+        <div class="cta__text">
+            <h3>Você Sonha e a Essenza Realiza!</h3>
+            <p>Cada ambiente feito para Guardar seus Melhores Momentos.</p>
+            <p>Você recebe seu apartamento pronto para morar, do seu jeito e sem preocupações.</p>
+            <p><strong>Consultoria, Projeto e Realização! O Essencial para transformar o seu sonho em lar.</strong></p>
+            <a class="cta__button" href="https://wa.me/5524992055100" target="_blank" rel="noopener">Quero agendar uma consultoria</a>
+        </div>
+        <figure class="cta__media">
+            <img src="assets/images/Servicos/Confira-meu-design-do-Canva-11-819x1024.png" alt="Consultoria Essenza">
+        </figure>
+    </section>
+</main>
+</body>
+</html>
