@@ -86,118 +86,7 @@
     <link rel='dns-prefetch' href='//www.googletagmanager.com' />
     <link rel="alternate" type="application/rss+xml" title="Feed para  &raquo;" href="feed/" />
     <link rel="alternate" type="application/rss+xml" title="Feed de comentários para  &raquo;" href="comments/feed/" />
-    <script type="text/javascript">
-        /* <![CDATA[ */
-        window._wpemojiSettings = {
-            "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/72x72\/",
-            "ext": ".png",
-            "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/svg\/",
-            "svgExt": ".svg",
-            "source": {
-                "concatemoji": "https:\/\/essenzasuacasa.com.br\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.8.3"
-            }
-        };
-        /*! This file is auto-generated */
-        ! function(s, n) {
-            var o, i, e;
-
-            function c(e) {
-                try {
-                    var t = {
-                        supportTests: e,
-                        timestamp: (new Date).valueOf()
-                    };
-                    sessionStorage.setItem(o, JSON.stringify(t))
-                } catch (e) {}
-            }
-
-            function p(e, t, n) {
-                e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(t, 0, 0);
-                var t = new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data),
-                    a = (e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(n, 0, 0), new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data));
-                return t.every(function(e, t) {
-                    return e === a[t]
-                })
-            }
-
-            function u(e, t) {
-                e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(t, 0, 0);
-                for (var n = e.getImageData(16, 16, 1, 1), a = 0; a < n.data.length; a++)
-                    if (0 !== n.data[a]) return !1;
-                return !0
-            }
-
-            function f(e, t, n, a) {
-                switch (t) {
-                    case "flag":
-                        return n(e, "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f", "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f") ? !1 : !n(e, "\ud83c\udde8\ud83c\uddf6", "\ud83c\udde8\u200b\ud83c\uddf6") && !n(e, "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f", "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");
-                    case "emoji":
-                        return !a(e, "\ud83e\udedf")
-                }
-                return !1
-            }
-
-            function g(e, t, n, a) {
-                var r = "undefined" != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope ? new OffscreenCanvas(300, 150) : s.createElement("canvas"),
-                    o = r.getContext("2d", {
-                        willReadFrequently: !0
-                    }),
-                    i = (o.textBaseline = "top", o.font = "600 32px Arial", {});
-                return e.forEach(function(e) {
-                    i[e] = t(o, e, n, a)
-                }), i
-            }
-
-            function t(e) {
-                var t = s.createElement("script");
-                t.src = e, t.defer = !0, s.head.appendChild(t)
-            }
-            "undefined" != typeof Promise && (o = "wpEmojiSettingsSupports", i = ["flag", "emoji"], n.supports = {
-                everything: !0,
-                everythingExceptFlag: !0
-            }, e = new Promise(function(e) {
-                s.addEventListener("DOMContentLoaded", e, {
-                    once: !0
-                })
-            }), new Promise(function(t) {
-                var n = function() {
-                    try {
-                        var e = JSON.parse(sessionStorage.getItem(o));
-                        if ("object" == typeof e && "number" == typeof e.timestamp && (new Date).valueOf() < e.timestamp + 604800 && "object" == typeof e.supportTests) return e.supportTests
-                    } catch (e) {}
-                    return null
-                }();
-                if (!n) {
-                    if ("undefined" != typeof Worker && "undefined" != typeof OffscreenCanvas && "undefined" != typeof URL && URL.createObjectURL && "undefined" != typeof Blob) try {
-                        var e = "postMessage(" + g.toString() + "(" + [JSON.stringify(i), f.toString(), p.toString(), u.toString()].join(",") + "));",
-                            a = new Blob([e], {
-                                type: "text/javascript"
-                            }),
-                            r = new Worker(URL.createObjectURL(a), {
-                                name: "wpTestEmojiSupports"
-                            });
-                        return void(r.onmessage = function(e) {
-                            c(n = e.data), r.terminate(), t(n)
-                        })
-                    } catch (e) {}
-                    c(n = g(i, f, p, u))
-                }
-                t(n)
-            }).then(function(e) {
-                for (var t in e) n.supports[t] = e[t], n.supports.everything = n.supports.everything && n.supports[t], "flag" !== t && (n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && n.supports[t]);
-                n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && !n.supports.flag, n.DOMReady = !1, n.readyCallback = function() {
-                    n.DOMReady = !0
-                }
-            }).then(function() {
-                return e
-            }).then(function() {
-                var e;
-                n.supports.everything || (n.readyCallback(), (e = n.source || {}).concatemoji ? t(e.concatemoji) : e.wpemoji && e.twemoji && (t(e.twemoji), t(e.wpemoji)))
-            }))
-        }((window, document), window._wpemojiSettings);
-        /* ]]> */
-    </script>
-
+    
     <link rel='stylesheet' id='kubio-block-library-css' href='assets/css/style.css?ver=1761075748' type='text/css' media='all' />
     <style id='kubio-block-library-inline-css' type='text/css'>
         .kubio-shape-circles {
@@ -3583,6 +3472,21 @@
             }
         }
     </style>
+    <style>
+        .site-logo-img {
+            display: block;
+            max-height: 48px;
+            width: auto;
+            height: auto;
+        }
+
+        @media (max-width: 768px) {
+            .site-logo-img {
+                max-height: 36px;
+            }
+        }
+    </style>
+
     <style id='wp-emoji-styles-inline-css' type='text/css'>
         img.wp-smiley,
         img.emoji {
@@ -4062,18 +3966,11 @@
     <link rel='stylesheet' id='uagb-slick-css-css' href='assets/css/slick.min.css?ver=2.19.15' type='text/css' media='all' />
     <link rel='stylesheet' id='uagb-swiper-css-css' href='assets/css/swiper-bundle.min.css?ver=2.19.15' type='text/css' media='all' />
     <link rel='stylesheet' id='uag-style-52-css' href='assets/css/uag-css-52.css?ver=1763416166' type='text/css' media='all' />
-    <link rel='stylesheet' id='breevia-theme-css' href='wp-content/themes/breevia//resources/theme/fse-base-style.css?ver=1.0.6' type='text/css' media='all' />
-    <script type="text/javascript" src="assets/js/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+        <script type="text/javascript" src="assets/js/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
     <script type="text/javascript" src="assets/js/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
-    <link rel="https://api.w.org/" href="wp-json/" />
-    <link rel="alternate" title="JSON" type="application/json" href="wp-json/wp/v2/pages/52" />
-    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php?rsd" />
-    <meta name="generator" content="WordPress 6.8.3" />
+                <meta name="generator" content="WordPress 6.8.3" />
     <link rel='shortlink' href='' />
-    <link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="wp-json/oembed/1.0/embed?url=https%3A%2F%2Fessenzasuacasa.com.br%2F" />
-    <link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="wp-json/oembed/1.0/embed?url=https%3A%2F%2Fessenzasuacasa.com.br%2F&#038;format=xml" />
-    <meta name="generator" content="Site Kit by Google 1.164.0" />
-    <meta name="format-detection" content="telephone=no">
+                <meta name="format-detection" content="telephone=no">
     <style id="uagb-style-conditional-extension">
         @media (min-width: 1025px) {
             body .uag-hide-desktop.uagb-google-map__wrap,
@@ -4272,7 +4169,7 @@
                                             </div>
                                             <div class="position-relative wp-block-kubio-column__align style-ZKe2ZyalXVL-align style-local-5-align h-y-container h-column__content h-column__v-align flex-basis-auto align-self-lg-center align-self-md-center align-self-center">
                                                 <a href="index.html" class="d-block h-link position-relative wp-block-kubio-heading__ style-0PzqueaJvl- style-local-6-">
-                                                    <h2 class="wp-block wp-block-kubio-heading  position-relative wp-block-kubio-heading__text style-0PzqueaJvl-text style-local-6-text" data-kubio="kubio/heading">Essenza</h2>
+                                                    <img src="assets/images/LogoBlack.png" alt="Essenza" class="site-logo-img" loading="lazy" />
                                                 </a>
                                             </div>
                                         </div>
@@ -4422,11 +4319,11 @@
                     </div>
                     <div data-kubio-component="slideshow" data-kubio-settings="{&quot;duration&quot;:&quot;1569ms&quot;,&quot;speed&quot;:&quot;1397ms&quot;}" class="background-layer kubio-slideshow">
                         <div style="background-image:url(&quot;assets/images/file_00000000e77461f5890228f4becd2af1.webp&quot;);z-index:0" class="slideshow-image"></div>
-                        <div style="background-image:url(&quot;wp-content/uploads/2025/11/20251112_190904_0014.png&quot;);z-index:1" class="slideshow-image"></div>
+                        <div style="background-image:url(&quot;assets/images/Servicos/08 - 20251112_190904_0014.webp&quot;);z-index:1" class="slideshow-image"></div>
                         <div style="background-image:url(&quot;assets/images/file_000000008410620eb306c1896f620fd4.webp&quot;);z-index:2" class="slideshow-image"></div>
                         <div style="background-image:url(&quot;assets/images/IMG-20251017-WA0019.webp&quot;);z-index:3" class="slideshow-image"></div>
                         <div style="background-image:url(&quot;assets/images/20251112_190903_0003.webp&quot;);z-index:4" class="slideshow-image"></div>
-                        <div style="background-image:url(&quot;wp-content/uploads/2025/11/20251112_191207_0011.png&quot;);z-index:5" class="slideshow-image"></div>
+                        <div style="background-image:url(&quot;assets/images/Servicos/09 - 20251112_191207_0011.webp&quot;);z-index:5" class="slideshow-image"></div>
                     </div>
                 </div>
             </div>
@@ -4472,7 +4369,7 @@
                                     <figure class="wp-block wp-block-kubio-image  position-relative wp-block-kubio-image__outer style-H7SKH50y7-outer style-local-25-outer size-full align-items-center" data-kubio="kubio/image">
                                         <div class="position-relative wp-block-kubio-image__captionContainer style-H7SKH50y7-captionContainer style-local-25-captionContainer">
                                             <div class="position-relative wp-block-kubio-image__frameContainer style-H7SKH50y7-frameContainer style-local-25-frameContainer"><img fetchpriority="high" decoding="async" width="512" height="512" class="position-relative wp-block-kubio-image__image style-H7SKH50y7-image style-local-25-image d-flex wp-image-201" alt="" src="assets/images/Confira-meu-design-do-Canva.webp"
-                                                    srcset="assets/images/Confira-meu-design-do-Canva.webp 512w, wp-content/uploads/2025/10/Confira-meu-design-do-Canva-300x300.webp 300w, wp-content/uploads/2025/10/Confira-meu-design-do-Canva-150x150.png 150w"
+                                                    srcset="assets/images/Confira-meu-design-do-Canva.webp 512w"
                                                     sizes="(max-width: 512px) 100vw, 512px" /></div>
                                         </div>
                                     </figure>
@@ -4632,7 +4529,7 @@
                                     <figure class="wp-block wp-block-kubio-image  position-relative wp-block-kubio-image__outer style--6OgIjUS--outer style-local-45-outer size-full align-items-center" data-kubio="kubio/image" id="image-1">
                                         <div class="position-relative wp-block-kubio-image__captionContainer style--6OgIjUS--captionContainer style-local-45-captionContainer">
                                             <div class="position-relative wp-block-kubio-image__frameContainer style--6OgIjUS--frameContainer style-local-45-frameContainer"><img decoding="async" width="1024" height="1536" class="position-relative wp-block-kubio-image__image style--6OgIjUS--image style-local-45-image d-flex wp-image-144" alt="" src="assets/images/file_000000007c8c620e98712dc987d94367.webp"
-                                                    srcset="assets/images/file_000000007c8c620e98712dc987d94367.webp 1024w, wp-content/uploads/2025/10/file_000000007c8c620e98712dc987d94367-200x300.webp 200w, wp-content/uploads/2025/10/file_000000007c8c620e98712dc987d94367-683x1024.png 683w, wp-content/uploads/2025/10/file_000000007c8c620e98712dc987d94367-768x1152.png 768w, wp-content/uploads/2025/10/file_000000007c8c620e98712dc987d94367-720x1080.png 720w"
+                                                    srcset="assets/images/file_000000007c8c620e98712dc987d94367.webp 1024w"
                                                     sizes="(max-width: 1024px) 100vw, 1024px" /></div>
                                         </div>
                                     </figure>
@@ -4700,7 +4597,7 @@
                                     <figure class="wp-block wp-block-kubio-image  position-relative wp-block-kubio-image__outer style--6OgIjUS--outer style-local-61-outer size-full align-items-center" data-kubio="kubio/image" id="image-1">
                                         <div class="position-relative wp-block-kubio-image__captionContainer style--6OgIjUS--captionContainer style-local-61-captionContainer">
                                             <div class="position-relative wp-block-kubio-image__frameContainer style--6OgIjUS--frameContainer style-local-61-frameContainer"><img decoding="async" width="1080" height="1350" class="position-relative wp-block-kubio-image__image style--6OgIjUS--image style-local-61-image d-flex wp-image-543" alt="" src="assets/images/20251112_190903_0003.webp"
-                                                    srcset="assets/images/20251112_190903_0003.webp 1080w, assets/images/shapes/20251112_190903_0003-240x300.webp 240w, assets/images/20251112_190903_0003-819x1024.webp 819w, wp-content/uploads/2025/11/20251112_190903_0003-768x960.webp 768w, wp-content/uploads/2025/11/20251112_190903_0003-864x1080.png 864w"
+                                                    srcset="assets/images/20251112_190903_0003.webp 1080w, assets/images/shapes/20251112_190903_0003-240x300.webp 240w, assets/images/20251112_190903_0003-819x1024.webp 819w"
                                                     sizes="(max-width: 1080px) 100vw, 1080px" /></div>
                                         </div>
                                     </figure>
@@ -4768,7 +4665,7 @@
                                     <figure class="wp-block wp-block-kubio-image  position-relative wp-block-kubio-image__outer style--6OgIjUS--outer style-local-77-outer size-full align-items-center" data-kubio="kubio/image" id="image-1">
                                         <div class="position-relative wp-block-kubio-image__captionContainer style--6OgIjUS--captionContainer style-local-77-captionContainer">
                                             <div class="position-relative wp-block-kubio-image__frameContainer style--6OgIjUS--frameContainer style-local-77-frameContainer"><img loading="lazy" decoding="async" width="1024" height="1536" class="position-relative wp-block-kubio-image__image style--6OgIjUS--image style-local-77-image d-flex wp-image-139" alt="" src="assets/images/file_00000000c8c061f5904266111cd83c36-1.webp"
-                                                    srcset="assets/images/file_00000000c8c061f5904266111cd83c36-1.webp 1024w, wp-content/uploads/2025/10/file_00000000c8c061f5904266111cd83c36-1-200x300.webp 200w, wp-content/uploads/2025/10/file_00000000c8c061f5904266111cd83c36-1-683x1024.png 683w, wp-content/uploads/2025/10/file_00000000c8c061f5904266111cd83c36-1-768x1152.png 768w, wp-content/uploads/2025/10/file_00000000c8c061f5904266111cd83c36-1-720x1080.png 720w"
+                                                    srcset="assets/images/file_00000000c8c061f5904266111cd83c36-1.webp 1024w"
                                                     sizes="(max-width: 1024px) 100vw, 1024px" /></div>
                                         </div>
                                     </figure>
@@ -4892,7 +4789,7 @@
                             <figure class="wp-block wp-block-kubio-image  position-relative wp-block-kubio-image__outer style-qliv0cbsL-outer style-local-104-outer size-full align-items-center" data-kubio="kubio/image">
                                 <div class="position-relative wp-block-kubio-image__captionContainer style-qliv0cbsL-captionContainer style-local-104-captionContainer">
                                     <div class="position-relative wp-block-kubio-image__frameContainer style-qliv0cbsL-frameContainer style-local-104-frameContainer"><img loading="lazy" decoding="async" width="1080" height="1350" class="position-relative wp-block-kubio-image__image style-qliv0cbsL-image style-local-104-image d-flex wp-image-287" alt="" src="assets/images/Confira-meu-design-do-Canva-4.webp"
-                                            srcset="assets/images/Confira-meu-design-do-Canva-4.webp 1080w, wp-content/uploads/2025/10/Confira-meu-design-do-Canva-4-240x300.webp 240w, wp-content/uploads/2025/10/Confira-meu-design-do-Canva-4-819x1024.png 819w, wp-content/uploads/2025/10/Confira-meu-design-do-Canva-4-768x960.png 768w, wp-content/uploads/2025/10/Confira-meu-design-do-Canva-4-864x1080.png 864w"
+                                            srcset="assets/images/Confira-meu-design-do-Canva-4.webp 1080w"
                                             sizes="(max-width: 1080px) 100vw, 1080px" />
                                         <div class="position-relative wp-block-kubio-image__frameImage style-qliv0cbsL-frameImage style-local-104-frameImage"></div>
                                     </div>
@@ -5978,8 +5875,7 @@
         window.kubioFrontendData = [];
     </script>
     <script type="speculationrules">
-        {"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/breevia\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch,
-        .no-prefetch a"}}]},"eagerness":"conservative"}]}
+        {"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/\*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/breevia\/*","\/*\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch,.no-prefetch a"}}]},"eagerness":"conservative"}]}
     </script>
     <script type="text/javascript" id="wp-block-template-skip-link-js-after">
         /* <![CDATA[ */
@@ -6025,69 +5921,8 @@
 
         /* ]]> */
     </script>
-    <script type="text/javascript" src="assets/js/hooks.min.js?ver=4d63a3d491d11ffd8ac6" id="wp-hooks-js"></script>
-    <script type="text/javascript" src="assets/js/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
-    <script type="text/javascript" id="wp-i18n-js-after">
-        /* <![CDATA[ */
-        wp.i18n.setLocaleData({
-            'text direction\u0004ltr': ['ltr']
-        });
-        /* ]]> */
-    </script>
-    <script type="text/javascript" src="assets/js/index_1.js?ver=6.1.2" id="swv-js"></script>
-    <script type="text/javascript" id="contact-form-7-js-translations">
-        /* <![CDATA[ */
-        (function(domain, translations) {
-            var localeData = translations.locale_data[domain] || translations.locale_data.messages;
-            localeData[""].domain = domain;
-            wp.i18n.setLocaleData(localeData, domain);
-        })("contact-form-7", {
-            "translation-revision-date": "2025-05-19 13:41:20+0000",
-            "generator": "GlotPress\/4.0.1",
-            "domain": "messages",
-            "locale_data": {
-                "messages": {
-                    "": {
-                        "domain": "messages",
-                        "plural-forms": "nplurals=2; plural=n > 1;",
-                        "lang": "pt_BR"
-                    },
-                    "Error:": ["Erro:"]
-                }
-            },
-            "comment": {
-                "reference": "includes\/js\/index.js"
-            }
-        });
-        /* ]]> */
-    </script>
-    <script type="text/javascript" id="contact-form-7-js-before">
-        /* <![CDATA[ */
-        var wpcf7 = {
-            "api": {
-                "root": "https:\/\/essenzasuacasa.com.br\/wp-json\/",
-                "namespace": "contact-form-7\/v1"
-            },
-            "cached": 1
-        };
-        /* ]]> */
-    </script>
-    <script type="text/javascript" src="assets/js/index.js?ver=6.1.2" id="contact-form-7-js"></script>
     <script type="text/javascript" defer src="assets/js/index_3.js?ver=585c1a7508e05f09ef60" id="kubio-scripts-js"></script>
     <script type="text/javascript" defer src="assets/js/index_2.js?ver=a8e81fe1b05690675cc9" id="kubio-frontend-js"></script>
-    <script type="text/javascript" id="hostinger-reach-subscription-block-view-js-extra">
-        /* <![CDATA[ */
-        var hostinger_reach_subscription_block_data = {
-            "endpoint": "https:\/\/essenzasuacasa.com.br\/wp-json\/hostinger-reach\/v1\/contact",
-            "nonce": "ffd5dd9d17",
-            "translations": {
-                "thanks": "Obrigado por ser um assinante!",
-                "error": "Ocorreu um erro. Tente novamente."
-            }
-        };
-        /* ]]> */
-    </script>
-    <script type="text/javascript" src="assets/js/subscription-view.js?ver=1762871664" id="hostinger-reach-subscription-block-view-js"></script>
     <script type="text/javascript" id="uagb-image-gallery-js-js-extra">
         /* <![CDATA[ */
         var uagb_image_gallery = {
