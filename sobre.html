@@ -102,118 +102,7 @@
     <link rel='dns-prefetch' href='//www.googletagmanager.com' />
     <link rel="alternate" type="application/rss+xml" title="Feed para  &raquo;" href="feed/" />
     <link rel="alternate" type="application/rss+xml" title="Feed de comentários para  &raquo;" href="comments/feed/" />
-    <script type="text/javascript">
-        /* <![CDATA[ */
-        window._wpemojiSettings = {
-            "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/72x72\/",
-            "ext": ".png",
-            "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/svg\/",
-            "svgExt": ".svg",
-            "source": {
-                "concatemoji": "https:\/\/essenzasuacasa.com.br\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.8.3"
-            }
-        };
-        /*! This file is auto-generated */
-        ! function(s, n) {
-            var o, i, e;
-
-            function c(e) {
-                try {
-                    var t = {
-                        supportTests: e,
-                        timestamp: (new Date).valueOf()
-                    };
-                    sessionStorage.setItem(o, JSON.stringify(t))
-                } catch (e) {}
-            }
-
-            function p(e, t, n) {
-                e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(t, 0, 0);
-                var t = new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data),
-                    a = (e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(n, 0, 0), new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data));
-                return t.every(function(e, t) {
-                    return e === a[t]
-                })
-            }
-
-            function u(e, t) {
-                e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(t, 0, 0);
-                for (var n = e.getImageData(16, 16, 1, 1), a = 0; a < n.data.length; a++)
-                    if (0 !== n.data[a]) return !1;
-                return !0
-            }
-
-            function f(e, t, n, a) {
-                switch (t) {
-                    case "flag":
-                        return n(e, "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f", "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f") ? !1 : !n(e, "\ud83c\udde8\ud83c\uddf6", "\ud83c\udde8\u200b\ud83c\uddf6") && !n(e, "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f", "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");
-                    case "emoji":
-                        return !a(e, "\ud83e\udedf")
-                }
-                return !1
-            }
-
-            function g(e, t, n, a) {
-                var r = "undefined" != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope ? new OffscreenCanvas(300, 150) : s.createElement("canvas"),
-                    o = r.getContext("2d", {
-                        willReadFrequently: !0
-                    }),
-                    i = (o.textBaseline = "top", o.font = "600 32px Arial", {});
-                return e.forEach(function(e) {
-                    i[e] = t(o, e, n, a)
-                }), i
-            }
-
-            function t(e) {
-                var t = s.createElement("script");
-                t.src = e, t.defer = !0, s.head.appendChild(t)
-            }
-            "undefined" != typeof Promise && (o = "wpEmojiSettingsSupports", i = ["flag", "emoji"], n.supports = {
-                everything: !0,
-                everythingExceptFlag: !0
-            }, e = new Promise(function(e) {
-                s.addEventListener("DOMContentLoaded", e, {
-                    once: !0
-                })
-            }), new Promise(function(t) {
-                var n = function() {
-                    try {
-                        var e = JSON.parse(sessionStorage.getItem(o));
-                        if ("object" == typeof e && "number" == typeof e.timestamp && (new Date).valueOf() < e.timestamp + 604800 && "object" == typeof e.supportTests) return e.supportTests
-                    } catch (e) {}
-                    return null
-                }();
-                if (!n) {
-                    if ("undefined" != typeof Worker && "undefined" != typeof OffscreenCanvas && "undefined" != typeof URL && URL.createObjectURL && "undefined" != typeof Blob) try {
-                        var e = "postMessage(" + g.toString() + "(" + [JSON.stringify(i), f.toString(), p.toString(), u.toString()].join(",") + "));",
-                            a = new Blob([e], {
-                                type: "text/javascript"
-                            }),
-                            r = new Worker(URL.createObjectURL(a), {
-                                name: "wpTestEmojiSupports"
-                            });
-                        return void(r.onmessage = function(e) {
-                            c(n = e.data), r.terminate(), t(n)
-                        })
-                    } catch (e) {}
-                    c(n = g(i, f, p, u))
-                }
-                t(n)
-            }).then(function(e) {
-                for (var t in e) n.supports[t] = e[t], n.supports.everything = n.supports.everything && n.supports[t], "flag" !== t && (n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && n.supports[t]);
-                n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && !n.supports.flag, n.DOMReady = !1, n.readyCallback = function() {
-                    n.DOMReady = !0
-                }
-            }).then(function() {
-                return e
-            }).then(function() {
-                var e;
-                n.supports.everything || (n.readyCallback(), (e = n.source || {}).concatemoji ? t(e.concatemoji) : e.wpemoji && e.twemoji && (t(e.twemoji), t(e.wpemoji)))
-            }))
-        }((window, document), window._wpemojiSettings);
-        /* ]]> */
-    </script>
-
+    
     <link rel='stylesheet' id='kubio-block-library-css' href='assets/css/style.css?ver=1761075748' type='text/css' media='all' />
     <style id='kubio-block-library-inline-css' type='text/css'>
         .kubio-shape-circles {
@@ -2916,17 +2805,8 @@
     <noscript><link rel='stylesheet' href='assets/css/style_1.css?ver=1761075748' media='all'></noscript>
     <link rel='stylesheet' id='hostinger-reach-subscription-block-css' href='assets/css/subscription.css?ver=1762871664'
         type='text/css' media='all' />
-    <link rel='stylesheet' id='breevia-theme-css' href='wp-content/themes/breevia//resources/theme/fse-base-style.css?ver=1.0.6' type='text/css' media='all' />
     <script type="text/javascript" src="assets/js/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
     <script type="text/javascript" src="assets/js/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
-    <link rel="https://api.w.org/" href="wp-json/" />
-    <link rel="alternate" title="JSON" type="application/json" href="wp-json/wp/v2/pages/347" />
-    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php?rsd" />
-    <meta name="generator" content="WordPress 6.8.3" />
-    <link rel='shortlink' href='?p=347' />
-    <link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="wp-json/oembed/1.0/embed?url=https%3A%2F%2Fessenzasuacasa.com.br%2Fsobre-nos-2%2F" />
-    <link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="wp-json/oembed/1.0/embed?url=https%3A%2F%2Fessenzasuacasa.com.br%2Fsobre-nos-2%2F&#038;format=xml" />
-    <meta name="generator" content="Site Kit by Google 1.164.0" />
     <meta name="format-detection" content="telephone=no">
     <style id="uagb-style-conditional-extension">
         @media (min-width: 1025px) {
@@ -3241,7 +3121,7 @@
                                     <figure class="wp-block wp-block-kubio-image  position-relative wp-block-kubio-image__outer style-RUQbw9dFG-outer style-local-25-outer size-full align-items-center" data-kubio="kubio/image">
                                         <div class="position-relative wp-block-kubio-image__captionContainer style-RUQbw9dFG-captionContainer style-local-25-captionContainer">
                                             <div class="position-relative wp-block-kubio-image__frameContainer style-RUQbw9dFG-frameContainer style-local-25-frameContainer"><img fetchpriority="high" decoding="async" width="512" height="512" class="position-relative wp-block-kubio-image__image style-RUQbw9dFG-image style-local-25-image d-flex wp-image-201" alt="" src="assets/images/Confira-meu-design-do-Canva.webp"
-                                                    srcset="assets/images/Confira-meu-design-do-Canva.webp 512w, wp-content/uploads/2025/10/Confira-meu-design-do-Canva-300x300.webp 300w, wp-content/uploads/2025/10/Confira-meu-design-do-Canva-150x150.png 150w"
+                                                    srcset="assets/images/Confira-meu-design-do-Canva.webp 512w"
                                                     sizes="(max-width: 512px) 100vw, 512px" /></div>
                                         </div>
                                     </figure>
@@ -3380,7 +3260,7 @@
                                                             <figure class="wp-block wp-block-kubio-image  position-relative wp-block-kubio-image__outer style-qliv0cbsL-outer style-local-46-outer size-full align-items-center" data-kubio="kubio/image">
                                                                 <div class="position-relative wp-block-kubio-image__captionContainer style-qliv0cbsL-captionContainer style-local-46-captionContainer">
                                                                     <div class="position-relative wp-block-kubio-image__frameContainer style-qliv0cbsL-frameContainer style-local-46-frameContainer"><img decoding="async" width="1080" height="1350" class="position-relative wp-block-kubio-image__image style-qliv0cbsL-image style-local-46-image d-flex wp-image-90" alt="" src="assets/images/5_20251021_175952_0004.webp"
-                                                                            srcset="assets/images/5_20251021_175952_0004.webp 1080w, wp-content/uploads/2025/10/5_20251021_175952_0004-240x300.webp 240w, wp-content/uploads/2025/10/5_20251021_175952_0004-819x1024.png 819w, wp-content/uploads/2025/10/5_20251021_175952_0004-768x960.png 768w, wp-content/uploads/2025/10/5_20251021_175952_0004-864x1080.png 864w"
+                                                                            srcset="assets/images/5_20251021_175952_0004.webp 1080w"
                                                                             sizes="(max-width: 1080px) 100vw, 1080px" /></div>
                                                                 </div>
                                                             </figure>
@@ -3422,51 +3302,124 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="faq-wrapper">
-                                            <p class="faq-intro">Reunimos as principais d&uacute;vidas sobre os nossos servi&ccedil;os para que voc&ecirc; encontre rapidamente as respostas e descubra como a Essenza pode ajudar no seu pr&oacute;ximo projeto.</p>
-                                            <div class="faq-grid">
-                                                <details class="faq-card" open>
+                                        <div class="faq-inline" id="faq-inline">
+                                            <style>
+                                                #faq-inline {
+                                                    margin-top: 2rem;
+                                                    background: #fff;
+                                                    border-radius: 28px;
+                                                    padding: clamp(1.5rem, 4vw, 2.75rem);
+                                                    box-shadow: 0 15px 45px rgba(20, 20, 20, .08);
+                                                    color: #1a1a1a;
+                                                }
+                                                
+                                                #faq-inline .faq-inline__intro {
+                                                    text-align: center;
+                                                    max-width: 720px;
+                                                    margin: 0 auto 1.5rem;
+                                                    font-size: 1.05rem;
+                                                    color: #4a4a4a;
+                                                }
+                                                
+                                                #faq-inline .faq-inline__grid {
+                                                    display: grid;
+                                                    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+                                                    gap: 1.25rem;
+                                                }
+                                                
+                                                #faq-inline .faq-inline__card {
+                                                    border: 1px solid rgba(0, 0, 0, .08);
+                                                    border-radius: 20px;
+                                                    padding: 1.25rem 1.4rem;
+                                                    background: #fdfaf7;
+                                                    box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+                                                }
+                                                
+                                                #faq-inline .faq-inline__card summary {
+                                                    list-style: none;
+                                                    display: flex;
+                                                    gap: .8rem;
+                                                    align-items: center;
+                                                    cursor: pointer;
+                                                    font-weight: 600;
+                                                }
+                                                
+                                                #faq-inline .faq-inline__card summary::-webkit-details-marker {
+                                                    display: none;
+                                                }
+                                                
+                                                #faq-inline .faq-inline__icon {
+                                                    width: 32px;
+                                                    height: 32px;
+                                                    border-radius: 999px;
+                                                    background: rgba(197, 138, 80, .15);
+                                                    color: #c58a50;
+                                                    display: inline-flex;
+                                                    align-items: center;
+                                                    justify-content: center;
+                                                    font-weight: 700;
+                                                }
+                                                
+                                                #faq-inline .faq-inline__answer {
+                                                    margin-top: 1rem;
+                                                    color: #4a4a4a;
+                                                    font-size: .95rem;
+                                                    line-height: 1.5;
+                                                }
+                                                
+                                                #faq-inline .faq-inline__answer p {
+                                                    margin-bottom: .7rem;
+                                                }
+                                                
+                                                @media (max-width: 640px) {
+                                                    #faq-inline {
+                                                        padding: 1.5rem;
+                                                    }
+                                                    #faq-inline .faq-inline__card {
+                                                        padding: 1rem;
+                                                    }
+                                                }
+                                            </style>
+                                            <p class="faq-inline__intro">Reunimos as principais d&uacute;vidas sobre os nossos servi&ccedil;os para que voc&ecirc; encontre rapidamente as respostas e descubra como a Essenza pode ajudar no seu pr&oacute;ximo projeto.</p>
+                                            <div class="faq-inline__grid">
+                                                <details class="faq-inline__card" open>
                                                     <summary>
-                                                            <span class="faq-icon">?</span>
-                                                            <span class="faq-question">Meu projeto inicia mesmo antes da entrega das chaves?</span>
-                                                            <span class="faq-toggle" aria-hidden="true"></span>
+                                                        <span class="faq-inline__icon">?</span>
+                                                        <span>Meu projeto inicia mesmo antes da entrega das chaves?</span>
                                                     </summary>
-                                                    <div class="faq-answer">
-                                                            <p>Sim! Com a <strong>Essenza</strong>, o seu projeto ser&aacute; iniciado antes mesmo da entrega das chaves.</p>
-                                                            <p>Nossa equipe atua em parceria com as construtoras, o que permite a personaliza&ccedil;&atilde;o antecipada do seu im&oacute;vel. Enquanto a obra &eacute; finalizada, n&oacute;s j&aacute; estamos cuidando do desenvolvimento para que voc&ecirc; receba o apartamento pronto, do seu jeito e com garantia estendida.</p>
+                                                    <div class="faq-inline__answer">
+                                                        <p>Sim! Com a <strong>Essenza</strong>, o seu projeto ser&aacute; iniciado antes mesmo da entrega das chaves.</p>
+                                                        <p>Nossa equipe atua em parceria com as construtoras, o que permite a personaliza&ccedil;&atilde;o antecipada do seu im&oacute;vel. Enquanto a obra &eacute; finalizada, n&oacute;s j&aacute; estamos cuidando do desenvolvimento para que voc&ecirc; receba o apartamento pronto, do seu jeito e com garantia estendida.</p>
                                                     </div>
                                                 </details>
-                                                <details class="faq-card">
+                                                <details class="faq-inline__card">
                                                     <summary>
-                                                            <span class="faq-icon">?</span>
-                                                            <span class="faq-question">Os servi&ccedil;os contratados pela Essenza s&atilde;o de responsabilidade da construtora?</span>
-                                                            <span class="faq-toggle" aria-hidden="true"></span>
+                                                        <span class="faq-inline__icon">?</span>
+                                                        <span>Os servi&ccedil;os contratados pela Essenza s&atilde;o de responsabilidade da construtora?</span>
                                                     </summary>
-                                                    <div class="faq-answer">
-                                                            <p>N&atilde;o! Os servi&ccedil;os contratados com a Essenza s&atilde;o de nossa inteira responsabilidade.</p>
-                                                            <p>Todo o projeto &eacute; alinhado com a construtora para manter a compatibilidade t&eacute;cnica, mas o acompanhamento e a execu&ccedil;&atilde;o permanecem sob os nossos cuidados.</p>
+                                                    <div class="faq-inline__answer">
+                                                        <p>N&atilde;o! Os servi&ccedil;os contratados com a Essenza s&atilde;o de nossa inteira responsabilidade.</p>
+                                                        <p>Todo o projeto &eacute; alinhado com a construtora para manter a compatibilidade t&eacute;cnica, mas o acompanhamento e a execu&ccedil;&atilde;o permanecem sob os nossos cuidados.</p>
                                                     </div>
                                                 </details>
-                                                <details class="faq-card">
+                                                <details class="faq-inline__card">
                                                     <summary>
-                                                            <span class="faq-icon">?</span>
-                                                            <span class="faq-question">Voc&ecirc;s realizam reformas em qualquer im&oacute;vel?</span>
-                                                            <span class="faq-toggle" aria-hidden="true"></span>
+                                                        <span class="faq-inline__icon">?</span>
+                                                        <span>Voc&ecirc;s realizam reformas em qualquer im&oacute;vel?</span>
                                                     </summary>
-                                                    <div class="faq-answer">
-                                                            <p>Sim! Entregamos projetos e servi&ccedil;os de engenharia em todos os &acirc;mbitos da constru&ccedil;&atilde;o civil.</p>
-                                                            <p>Atuamos desde pequenas atualiza&ccedil;&otilde;es at&eacute; transforma&ccedil;&otilde;es completas para tornar cada ambiente &uacute;nico.</p>
+                                                    <div class="faq-inline__answer">
+                                                        <p>Sim! Entregamos projetos e servi&ccedil;os de engenharia em todos os &acirc;mbitos da constru&ccedil;&atilde;o civil.</p>
+                                                        <p>Atuamos desde pequenas atualiza&ccedil;&otilde;es at&eacute; transforma&ccedil;&otilde;es completas para tornar cada ambiente &uacute;nico.</p>
                                                     </div>
                                                 </details>
-                                                <details class="faq-card">
+                                                <details class="faq-inline__card">
                                                     <summary>
-                                                            <span class="faq-icon">?</span>
-                                                            <span class="faq-question">Quais tipos de obras a Essenza executa?</span>
-                                                            <span class="faq-toggle" aria-hidden="true"></span>
+                                                        <span class="faq-inline__icon">?</span>
+                                                        <span>Quais tipos de obras a Essenza executa?</span>
                                                     </summary>
-                                                    <div class="faq-answer">
-                                                            <p>Executamos obras residenciais, comerciais e industriais de m&eacute;dio e alto padr&atilde;o.</p>
-                                                            <p>Cada entrega combina planejamento minucioso, materiais selecionados e acompanhamento pr&oacute;ximo dos nossos especialistas.</p>
+                                                    <div class="faq-inline__answer">
+                                                        <p>Executamos obras residenciais, comerciais e industriais de m&eacute;dio e alto padr&atilde;o.</p>
+                                                        <p>Cada entrega combina planejamento minucioso, materiais selecionados e acompanhamento pr&oacute;ximo dos nossos especialistas.</p>
                                                     </div>
                                                 </details>
                                             </div>
@@ -3583,7 +3536,7 @@
                                                         <figure class="wp-block wp-block-kubio-image  position-relative wp-block-kubio-image__outer style-als-dLCHxH5-outer style-local-83-outer size-full align-items-center" data-kubio="kubio/image">
                                                             <div class="position-relative wp-block-kubio-image__captionContainer style-als-dLCHxH5-captionContainer style-local-83-captionContainer">
                                                                 <div class="position-relative wp-block-kubio-image__frameContainer style-als-dLCHxH5-frameContainer style-local-83-frameContainer"><img decoding="async" width="400" height="300" class="position-relative wp-block-kubio-image__image style-als-dLCHxH5-image style-local-83-image d-flex wp-image-319" alt="" src="assets/images/Seu-Projeto-Alinhado-a-Construtora_20251026_142739_0004.webp"
-                                                                        srcset="assets/images/Seu-Projeto-Alinhado-a-Construtora_20251026_142739_0004.webp 400w, wp-content/uploads/2025/10/Seu-Projeto-Alinhado-a-Construtora_20251026_142739_0004-300x225.webp 300w"
+                                                                        srcset="assets/images/Seu-Projeto-Alinhado-a-Construtora_20251026_142739_0004.webp 400w"
                                                                         sizes="(max-width: 400px) 100vw, 400px" /></div>
                                                             </div>
                                                         </figure>
@@ -3601,7 +3554,7 @@
                                                         <figure class="wp-block wp-block-kubio-image  position-relative wp-block-kubio-image__outer style-als-dLCHxH5-outer style-local-85-outer size-full align-items-center" data-kubio="kubio/image">
                                                             <div class="position-relative wp-block-kubio-image__captionContainer style-als-dLCHxH5-captionContainer style-local-85-captionContainer">
                                                                 <div class="position-relative wp-block-kubio-image__frameContainer style-als-dLCHxH5-frameContainer style-local-85-frameContainer"><img loading="lazy" decoding="async" width="400" height="300" class="position-relative wp-block-kubio-image__image style-als-dLCHxH5-image style-local-85-image d-flex wp-image-320" alt=""
-                                                                        src="assets/images/shapes/Seu-Projeto-Alinhado-a-Construtora_20251026_142739_0003.webp" srcset="assets/images/shapes/Seu-Projeto-Alinhado-a-Construtora_20251026_142739_0003.webp 400w, wp-content/uploads/2025/10/Seu-Projeto-Alinhado-a-Construtora_20251026_142739_0003-300x225.webp 300w"
+                                                                        src="assets/images/shapes/Seu-Projeto-Alinhado-a-Construtora_20251026_142739_0003.webp" srcset="assets/images/shapes/Seu-Projeto-Alinhado-a-Construtora_20251026_142739_0003.webp 400w"
                                                                         sizes="(max-width: 400px) 100vw, 400px" /></div>
                                                             </div>
                                                         </figure>
@@ -3761,8 +3714,7 @@
         window.kubioFrontendData = [];
     </script>
     <script type="speculationrules">
-        {"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/breevia\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch,
-        .no-prefetch a"}}]},"eagerness":"conservative"}]}
+        {"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/breevia\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch,.no-prefetch a"}}]},"eagerness":"conservative"}]}
     </script>
     <script type="text/javascript" id="wp-block-template-skip-link-js-after">
         /* <![CDATA[ */
@@ -3808,70 +3760,9 @@
 
         /* ]]> */
     </script>
-    <script type="text/javascript" src="assets/js/hooks.min.js?ver=4d63a3d491d11ffd8ac6" id="wp-hooks-js"></script>
-    <script type="text/javascript" src="assets/js/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
-    <script type="text/javascript" id="wp-i18n-js-after">
-        /* <![CDATA[ */
-        wp.i18n.setLocaleData({
-            'text direction\u0004ltr': ['ltr']
-        });
-        /* ]]> */
-    </script>
-    <script type="text/javascript" src="assets/js/index_1.js?ver=6.1.2" id="swv-js"></script>
-    <script type="text/javascript" id="contact-form-7-js-translations">
-        /* <![CDATA[ */
-        (function(domain, translations) {
-            var localeData = translations.locale_data[domain] || translations.locale_data.messages;
-            localeData[""].domain = domain;
-            wp.i18n.setLocaleData(localeData, domain);
-        })("contact-form-7", {
-            "translation-revision-date": "2025-05-19 13:41:20+0000",
-            "generator": "GlotPress\/4.0.1",
-            "domain": "messages",
-            "locale_data": {
-                "messages": {
-                    "": {
-                        "domain": "messages",
-                        "plural-forms": "nplurals=2; plural=n > 1;",
-                        "lang": "pt_BR"
-                    },
-                    "Error:": ["Erro:"]
-                }
-            },
-            "comment": {
-                "reference": "includes\/js\/index.js"
-            }
-        });
-        /* ]]> */
-    </script>
-    <script type="text/javascript" id="contact-form-7-js-before">
-        /* <![CDATA[ */
-        var wpcf7 = {
-            "api": {
-                "root": "https:\/\/essenzasuacasa.com.br\/wp-json\/",
-                "namespace": "contact-form-7\/v1"
-            },
-            "cached": 1
-        };
-        /* ]]> */
-    </script>
-    <script type="text/javascript" src="assets/js/index.js?ver=6.1.2" id="contact-form-7-js"></script>
-    <script type="text/javascript" defer src="assets/js/index_3.js?ver=585c1a7508e05f09ef60" id="kubio-scripts-js"></script>
+                                <script type="text/javascript" defer src="assets/js/index_3.js?ver=585c1a7508e05f09ef60" id="kubio-scripts-js"></script>
     <script type="text/javascript" defer src="assets/js/index_2.js?ver=a8e81fe1b05690675cc9" id="kubio-frontend-js"></script>
-    <script type="text/javascript" id="hostinger-reach-subscription-block-view-js-extra">
-        /* <![CDATA[ */
-        var hostinger_reach_subscription_block_data = {
-            "endpoint": "https:\/\/essenzasuacasa.com.br\/wp-json\/hostinger-reach\/v1\/contact",
-            "nonce": "ffd5dd9d17",
-            "translations": {
-                "thanks": "Obrigado por ser um assinante!",
-                "error": "Ocorreu um erro. Tente novamente."
-            }
-        };
-        /* ]]> */
-    </script>
-    <script type="text/javascript" src="assets/js/subscription-view.js?ver=1762871664" id="hostinger-reach-subscription-block-view-js"></script>
-    <script defer src="assets/js/webp-upgrade.js"></script>
+            <script defer src="assets/js/webp-upgrade.js"></script>
 
 <a href="https://wa.me/5524992055100" class="whatsapp-float" target="_blank">
 <i class="fa fa-whatsapp my-float"></i>
