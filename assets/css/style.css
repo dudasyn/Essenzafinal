@@ -83,18 +83,113 @@ body.page-id-347 #content-3 .style-twgBgxo8j-inner {
     }
 }
 
-.faq-entry {
-    flex: 1 1 0%;
+.faq-wrapper {
+    margin-top: 2rem;
 }
 
-.faq-entry .style-YzChXBiwLm-inner {
-    padding-left: 0;
-    padding-right: 0;
+.faq-intro {
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #4a4a4a;
+    font-size: 1.1rem;
 }
 
-.faq-entry h4,
-.faq-entry p {
-    text-align: justify;
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
+
+.faq-card {
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 1.25rem;
+    padding: 1.5rem;
+    background: #fff;
+    box-shadow: 0 15px 35px rgba(20, 20, 20, 0.08);
+    transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease;
+}
+
+.faq-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 45px rgba(20, 20, 20, 0.12);
+}
+
+.faq-card[open] {
+    border-color: #c58a50;
+    box-shadow: 0 25px 55px rgba(197, 138, 80, 0.25);
+}
+
+.faq-card summary {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+    list-style: none;
+    font-weight: 600;
+    color: #1f1f1f;
+}
+
+.faq-card summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(197, 138, 80, 0.12);
+    color: #c58a50;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+.faq-question {
+    flex: 1 1 auto;
+}
+
+.faq-toggle {
+    margin-left: auto;
+    font-size: 1.5rem;
+    color: #c58a50;
+}
+
+.faq-toggle::before {
+    content: '+';
+    transition: transform .3s ease;
+}
+
+.faq-card[open] .faq-toggle::before {
+    content: '-';
+}
+
+.faq-answer {
+    margin-top: 1rem;
+    color: #4a4a4a;
+    line-height: 1.6;
+}
+
+.faq-answer p {
+    margin-bottom: .75rem;
+}
+
+.faq-answer p:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .faq-wrapper {
+        margin-top: 1.5rem;
+    }
+    .faq-card {
+        padding: 1.25rem;
+    }
+    .faq-intro {
+        font-size: 1rem;
+    }
 }
 
 @keyframes bounce {
