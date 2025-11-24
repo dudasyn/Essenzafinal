@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Essenza | P&aacute;gina n&atilde;o encontrada</title>
+<style>
+:root {
+    --ink: #141311;
+    --sand: #f7f3ef;
+    --stone: #d9c8ba;
+    --gold: #c38b59;
+    --sage: #8aa39b;
+    --white: #ffffff;
+    font-family: "Inter", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    min-height: 100vh;
+    background: radial-gradient(circle at top, rgba(255,255,255,.35), transparent 60%), var(--sand);
+    color: var(--ink);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: clamp(2rem, 5vw, 4rem);
+}
+.error {
+    width: 100%;
+    max-width: 960px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2.5rem;
+    background: rgba(255,255,255,.85);
+    border-radius: 32px;
+    box-shadow: 0 25px 60px rgba(20,19,17,.15);
+    padding: clamp(2rem, 4vw, 4rem);
+    position: relative;
+    overflow: hidden;
+}
+.error::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(140deg, rgba(195,139,89,.15), rgba(20,19,17,.15));
+    pointer-events: none;
+}
+.error__content, .error__cta { position: relative; z-index: 1; }
+.error__eyebrow {
+    text-transform: uppercase;
+    letter-spacing: .4em;
+    font-size: .75rem;
+    color: var(--sage);
+    margin-bottom: 1rem;
+}
+.error__code {
+    font-size: clamp(4rem, 12vw, 8rem);
+    font-weight: 700;
+    color: var(--gold);
+    line-height: .9;
+}
+.error__title {
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    margin: 1rem 0;
+}
+.error__text { margin-bottom: .85rem; }
+.error__actions {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: .85rem 1.8rem;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    font-size: .85rem;
+}
+.btn--filled {
+    background: var(--ink);
+    color: var(--sand);
+}
+.btn--outline {
+    border: 1px solid var(--gold);
+    color: var(--ink);
+}
+.error__cta {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background: rgba(20,19,17,.85);
+    color: var(--white);
+    border-radius: 24px;
+    padding: 2rem;
+}
+.error__cta h3 { color: var(--gold); font-size: 1.4rem; }
+.error__cta p { color: rgba(247,243,239,.9); }
+.error__links {
+    list-style: none;
+    margin-top: 1rem;
+    display: grid;
+    gap: .5rem;
+}
+.error__links a {
+    color: var(--sand);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(247,243,239,.3);
+    padding-bottom: .15rem;
+    width: fit-content;
+}
+@media (max-width: 600px) {
+    .error__cta { padding: 1.5rem; }
+}
+</style>
+</head>
+<body>
+<main class="error">
+    <section class="error__content">
+        <p class="error__eyebrow">Essenza</p>
+        <p class="error__code">404</p>
+        <h1 class="error__title">P&aacute;gina n&atilde;o encontrada</h1>
+        <p class="error__text">O link que voc&ecirc; tentou acessar pode ter sido removido, renomeado ou nunca existiu.</p>
+        <p class="error__text">Continue explorando nossos conte&uacute;dos ou volte para a p&aacute;gina inicial.</p>
+        <div class="error__actions">
+            <a class="btn btn--filled" href="index.html">Voltar ao in&iacute;cio</a>
+            <a class="btn btn--outline" href="portfolio/indexOLD.html">Ver Portf&oacute;lio</a>
+        </div>
+    </section>
+    <aside class="error__cta">
+        <h3>Precisa de ajuda?</h3>
+        <p>Estamos prontos para transformar o seu im&oacute;vel com o cuidado que voc&ecirc; merece.</p>
+        <a class="btn btn--filled" style="justify-content:center" href="https://wa.me/5524992055100" target="_blank" rel="noopener">Falar com a Essenza</a>
+        <ul class="error__links">
+            <li><a href="servicos/">Servi&ccedil;os</a></li>
+            <li><a href="sobre/">Sobre a Essenza</a></li>
+            <li><a href="portfolio/">Projetos</a></li>
+        </ul>
+    </aside>
+</main>
+</body>
+</html>
