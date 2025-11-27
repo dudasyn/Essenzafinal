@@ -1,4 +1,4 @@
-# 🏡 Essenza Sua Caza | Website Institucional
+# Essenza Sua Caza | Website Institucional
 
 O repositório principal do website oficial da **Essenza Sua Caza**, onde apresentamos nossa visão, portfólio de projetos e serviços de construção, e informações de contato.
 
@@ -18,7 +18,7 @@ O projeto é baseado em um *stack* estático moderno e utiliza o seguinte conjun
 
 ---
 
-## 🚀 Começando (Setup Local)
+## Começando (Setup Local)
 
 Siga estas instruções para configurar e visualizar o projeto em seu ambiente de desenvolvimento.
 
